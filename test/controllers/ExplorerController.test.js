@@ -17,13 +17,13 @@ describe("Unitary test for explorer controller", () => {
     });
 
     test("4) Explorer Controller fizzbuzz validation number", () => {
-        const res1 = ExplorerController.fizzbuzzValidationNumber(3)
-        const res2 = ExplorerController.fizzbuzzValidationNumber(5)
-        const res3 = ExplorerController.fizzbuzzValidationNumber(15)
-        const res4 = ExplorerController.fizzbuzzValidationNumber(1)
-        expect(res1).toBe("FIZZ")
-        expect(res2).toBe("BUZZ")
-        expect(res3).toBe("FIZZBUZZ")
-        expect(res4).toBe(1)
-    })
+        const res1 = ExplorerController.fizzbuzzValidationNumber(3);
+        const res2 = ExplorerController.fizzbuzzValidationNumber(5);
+        const res3 = ExplorerController.fizzbuzzValidationNumber(15);
+        const res4 = ExplorerController.fizzbuzzValidationNumber(1);
+        expect(res1).toBe("FIZZ");
+        expect(res2).toBe("BUZZ");
+        expect(res3).toBe("FIZZBUZZ");
+        expect(res4).toBe(1);
+    });
 });
