@@ -11,7 +11,7 @@ describe("Unitary test for explorer service", () => {
     
     test("2) Explorer service get ammount of explorers by mission ussage", () => {
         result = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
-        expect(result).toBe(10)
+        expect(result).toBe(11)
     })
 
     test("3) Explorer service get explorer username by mission", () => {
