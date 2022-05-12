@@ -14,15 +14,15 @@ describe("Unitary test for explorer controller", () => {
             ] 
         };
         const res1 = FizbuzzService.applyValidationInExplorer(explorer);
-        explorer.score = 5;
-        const res2 = FizbuzzService.applyValidationInNumber(explorer);
-        explorer.score = 15;
-        const res3 = FizbuzzService.applyValidationInNumber(explorer);
-        explorer.score = 1;
-        const res4 = FizbuzzService.applyValidationInNumber(explorer);
         expect(res1.trick).toBe("FIZZ");
+        explorer.score = 5;
+        const res2 = FizbuzzService.applyValidationInExplorer(explorer);
         expect(res2.trick).toBe("BUZZ");
+        explorer.score = 15;
+        const res3 = FizbuzzService.applyValidationInExplorer(explorer);
         expect(res3.trick).toBe("FIZZBUZZ");
+        explorer.score = 1;
+        const res4 = FizbuzzService.applyValidationInExplorer(explorer);
         expect(res4.trick).toBe(1);
     });
     
